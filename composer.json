@@ -1,0 +1,39 @@
+{
+  "name": "w3spi5/php-bscscan-api",
+  "type": "library",
+  "description": "PHP client for the Bscscan API",
+  "homepage": "https://github.com/w3spi5/php-bscscan-api",
+  "keywords": ["bscscan", "bnb", "bep2", "bep20", "ierc20", "api", "bscscan.com"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maslakou Ihar",
+      "email": "igormaslakoff@gmail.com",
+      "homepage": "https://github.com/maslakoff"
+    },
+    {
+      "name": "Wespify",
+      "email": "gh@wespify.com",
+      "homepage": "https://github.com/w3spi5"
+    },
+  ],
+  "support": {
+    "email": "gh@wespify.com"
+  },
+  "require": {
+    "php": "^5.6 || ^7.0 || ^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5 || ^6.0",
+    "mockery/mockery": "~0.8",
+    "guzzlehttp/guzzle": "~5.0"
+  },
+  "autoload": {
+    "psr-4": { "Bscscan\\": "lib/Bscscan/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Bscscan\\Tests\\": "tests/Bscscan/"}
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
