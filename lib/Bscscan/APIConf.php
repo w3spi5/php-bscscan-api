@@ -52,6 +52,6 @@ class APIConf
             return self::API_URL;
         }
 
-        return "https://{$net}.bscscan.io/api";
+        return "https://{$net}.bscscan.com/api";
     }
 }
