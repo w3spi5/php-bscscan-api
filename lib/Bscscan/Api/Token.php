@@ -11,10 +11,10 @@ namespace Bscscan\Api;
 class Token extends AbstractApi
 {
     /**
-     * Get ERC20-Token TotalSupply by ContractAddress
-     * Returns the current amount of an ERC-20 token in circulation.
+     * Get BEP20-Token TotalSupply by ContractAddress
+     * Returns the current amount of an BEP-20 token in circulation.
      *
-     * @param string $contractAddress the contract address of the ERC-20 token
+     * @param string $contractAddress the contract address of the BEP-20 token
      *
      * @return array
      * @throws \Bscscan\Exception\ErrorException
@@ -29,10 +29,10 @@ class Token extends AbstractApi
     }
 
     /**
-     * Get ERC20-Token Account Balance for TokenContractAddress
-     * Returns the current balance of an ERC-20 token of an address.
+     * Get BEP20-Token Account Balance for TokenContractAddress
+     * Returns the current balance of an BEP-20 token of an address.
      *
-     * @param string $contractAddress the contract address of the ERC-20 token
+     * @param string $contractAddress the contract address of the BEP-20 token
      * @param string $address the string representing the address to check for token balance
      *
      * @return array
@@ -49,10 +49,10 @@ class Token extends AbstractApi
     }
 
     /**
-     * Get Historical ERC20-Token TotalSupply by ContractAddress & BlockNo
-     * Returns the amount of an ERC-20 token in circulation at a certain block height.
+     * Get Historical BEP20-Token TotalSupply by ContractAddress & BlockNo
+     * Returns the amount of an BEP-20 token in circulation at a certain block height.
      *
-     * @param string $contractAddress the contract address of the ERC-20 token
+     * @param string $contractAddress the contract address of the BEP-20 token
      * @param string $blockNumber the integer block number to check total supply for eg. 12697906
      *
      * @return array
@@ -69,10 +69,10 @@ class Token extends AbstractApi
     }
 
     /**
-     * Get Historical ERC20-Token Account Balance for TokenContractAddress by BlockNo
-     * Returns the balance of an ERC-20 token of an address at a certain block height.
+     * Get Historical BEP20-Token Account Balance for TokenContractAddress by BlockNo
+     * Returns the balance of an BEP-20 token of an address at a certain block height.
      *
-     * @param string $contractAddress the contract address of the ERC-20 token
+     * @param string $contractAddress the contract address of the BEP-20 token
      * @param string $address the string representing the address to check for balance
      * @param string $blockNumber the integer block number to check total supply for eg. 12697906
      *
@@ -92,9 +92,9 @@ class Token extends AbstractApi
 
     /**
      * Get Token Info by ContractAddress
-     * Returns project information and social media links of an ERC-20/ERC-721 token.
+     * Returns project information and social media links of an BEP-20/ERC-721 token.
      *
-     * @param string $contractAddress the contract address of the ERC-20/ERC-721 token to retrieve token info
+     * @param string $contractAddress the contract address of the BEP-20/ERC-721 token to retrieve token info
      *
      * @return array
      * @throws \Bscscan\Exception\ErrorException

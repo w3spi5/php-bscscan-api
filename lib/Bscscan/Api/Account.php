@@ -129,12 +129,12 @@ class Account extends AbstractApi
     }
 
     /**
-     * Get a list of 'ERC20 - Token Transfer Events' by Address
+     * Get a list of 'BEP20 - Token Transfer Events' by Address
      *
      * Usage:
-     *    ERC-20 transfers from an address, specify the address parameter
-     *    ERC-20 transfers from a contract address, specify the contract address parameter
-     *    ERC-20 transfers from an address filtered by a token contract, specify both address and contract address parameters.
+     *    BEP-20 transfers from an address, specify the address parameter
+     *    BEP-20 transfers from a contract address, specify the contract address parameter
+     *    BEP-20 transfers from an address filtered by a token contract, specify both address and contract address parameters.
      *
      * @param string $address representing the address to check for balance
      * @param int $contractAddress representing the token contract address to check for balance
@@ -147,7 +147,7 @@ class Account extends AbstractApi
      * @return array
      * @throws ErrorException
      */
-    public function tokenERC20TransferListByAddress($address = null, $contractAddress = null, $sort = "asc", $page = null, $offset = null)
+    public function tokenBEP20TransferListByAddress($address = null, $contractAddress = null, $sort = "asc", $page = null, $offset = null)
     {
         if (is_null($address) && is_null($contractAddress)) {
             throw new InvalidArgumentException('Please specify at least one address');
